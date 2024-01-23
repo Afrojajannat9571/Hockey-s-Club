@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
        <!-- tailwind custom color  -->
 
        <script>
@@ -23,6 +24,8 @@
         }
       </script>
 
+
+
       <!-- manrope google font  -->
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,27 +38,320 @@
         .font-manrope{
             font-family: 'Manrope', sans-serif;
         }
+        .color-medium {
+            color: rgba(255, 255, 255, 0.6);
+          }
+
       </style>
 
 </head>
 <body class="font-manrope">
-     <!-- header section  -->
-    <header>
-    
+
+     <!---------------------------------- header section  --------------------------------->
+<header>
+<nav>
+    <div class="container mx- auto lg:px-24 px-8">
+        <div class="flex Itext-white justify-between">
+            <div class="flex justify-center items-center space-x-24">
+
+        <div class="">
+            <div>
+                <h1 class="text-3xl font-bold">
+                    Hockey<span class="text-orange-600">’s</span> Club
+                </h1>
+            </div>
+        
+        </div>
+        
+        <div class="space-x-8 text-lg font-semibold">
+        
+        <a href="#"><span class="text-orange-600">Home</span></a>
+        <a href="#">About</a>
+        <a href="#">Pages</a>
+        <a href="#">Blog</a>
+        <a href="#">Content</a>
+
+        <div><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></div>
+        
+        </div>
+        <div class="text-white btn btn-error text-base md:text-xl font-bold rounded-lg px-4 md:px-6">Get Ticket</div>
+</nav>
+
+            <!--------------- Banner section using tailwind  ----------->
+
+
+<div class="carousel w-full container">
+  <div id="slide1" class="carousel-item relative w-full">
+    <img src="./Images/image 1.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" class="btn btn-circle">❮</a> 
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide2" class="carousel-item relative w-full">
+    <img src="./Images/image 2.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" class="btn btn-circle">❮</a> 
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" class="carousel-item relative w-full">
+    <img src="./Images/image 3.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" class="btn btn-circle">❮</a> 
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide4" class="carousel-item relative w-full">
+    <img src="./Images/image 4.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide3" class="btn btn-circle">❮</a> 
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div
+  class="mt-3 md:mt-0 lg:absolute lg:bottom-28 lg:right-6 bg-black p-4 lg:p-8 rounded-2xl"
+>
+  <h3
+    class="text-lg md:text-2xl font-extrabold mb-2 mb:mb-4 text-white"
+  >
+    Meet all the heroes from the field
+  </h3>
+  <p class="md:text-base color-medium text-sm">
+    Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+    <br />
+    turpis placerat dolor. Purus urna in sit nullam proin.
+  </p>
+</div>
+</div>
 
     </header>
 
-        <!-- main section  -->
+        <!------------------------------------ main section  ---------------------------------->
 
     <main>
 
+      <!--------- Clients Question and answer part  ------->
+    
+   <div class="flex justify-center items-center">
+    <div><img src="./Images/Rectangle 4.png" alt=""></div>
+
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" checked="checked" /> 
+      <div class="collapse-title text-xl font-medium">
+        Our Equipment
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" checked="checked" /> 
+      <div class="collapse-title text-xl font-medium">
+        Hockey Training
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" checked="checked" /> 
+      <div class="collapse-title text-xl font-medium">
+        Private Lessons
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" checked="checked" /> 
+      <div class="collapse-title text-xl font-medium">
+        Ski Touring
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" /> 
+      <div class="collapse-title text-xl font-medium">
+        Booking
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" /> 
+      <div class="collapse-title text-xl font-medium">
+        Pricings
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+    
+   </div>
+
+  <!------------ Get In Touch  ------------->
+
+
+  <section class="my-32">
+    <div class="max-w-xl mx-auto text-center space-y-5 mb-20">
+      <h3 class="text-color-heading text-2xl md:text-4xl font-extrabold">
+        Get In Touch
+      </h3>
+      <p class="text-color-light text-base font-medium">
+        Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+        turpis placerat dolor. Purus urna in sit nullam proin.
+      </p>
+    </div>
+    <div class="flex flex-col lg:flex-row lg:justify-between">
+      <div
+        class="w-100% lg:w-[40%] rounded-2xl p-5 lg:p-12 border-2 space-y-6"
+      >
+        <div class="p-8 bg-sky-50 rounded-2xl w-full">
+          <img src="./Images/Group 1171275317.png" alt="" />
+          <p class="text-base text-slate-400 mt-5">Phone Number :</p>
+          <h3 class="text-lg text-color-heading font-extrabold">
+            (+62) 123-321-543
+          </h3>
+        </div>
+        <div class="p-8 bg-red-50 rounded-2xl w-full">
+          <img src="./Images/Group 1171275318.png" alt="" />
+          <p class="text-base text-slate-400 mt-5">Email :</p>
+          <h3 class="text-lg text-color-heading font-extrabold">
+            hockeys@support.com
+          </h3>
+        </div>
+
+        <div class="p-8 bg-blue-100 rounded-2xl w-full">
+          <img src="./Images/Group 1171275321.png" alt="" />
+          <p class="text-base text-slate-400 mt-5">Location :</p>
+          <h3 class="text-lg text-color-heading font-extrabold">
+            152/1 Mohakhali Wireless Gate
+          </h3>
+        </div>
+      </div>
+      <div class="w-full lg:w-[55%] mt-6 lg:mt-0">
+        <form class="grid lg:grid-cols-2 gap-6">
+          <div>
+            <label for="" class="text-color-heading text-xl font-semibold"
+              >Your Name
+            </label>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter your full name"
+              class="p-5 bg-slate-200 rounded-xl w-full text-base text-slate-400 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label for="" class="text-color-heading text-xl font-semibold"
+              >Your Email
+            </label>
+            <br />
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="p-5 bg-slate-200 rounded-xl w-full text-base text-slate-400 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label for="" class="text-color-heading text-xl font-semibold"
+              >Subject
+            </label>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter your subject"
+              class="p-5 bg-slate-200 rounded-xl w-full text-base text-slate-400 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label for="" class="text-color-heading text-xl font-semibold"
+              >Phone Number
+            </label>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter your phone number"
+              class="p-5 bg-slate-200 rounded-xl w-full text-base text-slate-400 focus:outline-none"
+            />
+          </div>
+          <div class="lg:col-span-2">
+            <label for="" class="text-color-heading text-xl font-semibold"
+              >Message
+            </label>
+            <br />
+            <textarea
+              name=""
+              id=""
+              rows="10"
+              class="w-full p-5 bg-slate-200 rounded-xl text-slate-400 focus:outline-none"
+              placeholder="Write your message"
+            ></textarea>
+          </div>
+          <div class="lg:col-span-2">
+            <button
+              class="btn btn-error w-full rounded-xl text-white text-xl font-bold"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="text-center py-9 mt-12 space-y-6 bg-gray-100">
+      <h3 class="text-2xl text-color-heading font-extrabold">
+        Social Media
+      </h3>
+      <ul class="flex gap-4 justify-center text-color-heading">
+       <img src="./Images/Social.png" alt="">
+      </ul>
+    </div>
+  </section>
     </main>
 
-       <!-- footer section  -->
+      <!---------------------------------- footer section  ---------------------------------------->
 
-    <footer>
+        <footer class="footer p-10 bg-zinc-900	 text-white py-24 rid grid-cols-2 gap-10 lg:grid-cols-4">
+            <aside>
+              <h1 class=" text-xl font-extrabold">Get In Touch</h1>
+              <p>
+                Want to play hockey?
+                We are an inclusive hockey club that welcomes <br> all who want to play hockey and be part of a thriving local hockey club.</p>
+                <h4 class="flex gap-4"><span><img src="./Images/Frame.png" alt=""></span>hockeys@support.com</h4>
+                <h6 class="flex gap-4"><span><img src="./Images/phon.png" alt=""></span>(+62) 123-321-543</h6>
+            </aside> 
+            <nav>
+              <header class="text-lg font-bold">Company</header> 
+              <a>About us</a>
+              <a>Leadership</a>
+              <a>Careers</a>
+              <a>News & Article</a>
+              <a>Legal Notice</a>
 
-    </footer>
+            </nav> 
+
+            <nav>
+              <header class="text-lg font-bold">Support</header> 
+              <a>Help Center</a>
+              <a>FAQ</a>
+              <a>Ticket Support</a>
+              <a>Contact Us</a>
+
+            </nav> 
+            <nav>
+              <header class="text-lg font-bold flex flex-col gap-3">Service</header> 
+              <a>Academy</a>
+              <a>Group Lesson</a>
+              <a>Private Lesson</a>
+              <a>Hockeys for kids</a>
+              <a> Hockeys for Adult</a>
+
+            </nav>
+          </footer>
 
 </body>
 </html>
